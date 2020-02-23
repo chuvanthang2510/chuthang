@@ -1,13 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-</head>
-
+<!DOCTYPE html>
+<html>
 <body>
-     <h1>anh</h1>
-     <img src="anh1.jpg" 
-     alt="anh1" width="150" height="150"/>
+
+Chữ mẫu: <input type="text" id="field1" value="Xin chào!"><br>
+<p id="field2"></p>
+
+<button onclick="myFunction()">Sao chép</button>
+
+<p>Nhấn vào nút trên để kích hoạt hàm sao chép từ ô Chữ mẫu sang ô Sao chép.</p>
+
+<script>
+function myFunction() {
+document.getElementById("field2").value = document.getElementById("field1").value;
+}
+</script>
+
 </body>
 </html>
